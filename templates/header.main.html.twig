@@ -3,10 +3,10 @@
 {% block body %}
 
     {# Header Main #}
-    <header id="header-main" class="header-main">
+    <header id="header-main" class="header-main sticky-top">
 
         {# Navigation #}
-        <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
 
                 <a class="navbar-brand" href="#">Add An Ad</a>
@@ -38,5 +38,19 @@
     </header>
     {# end Header Main #}
 
+    {# Header content #}
+    
+    <section id="header-content" class="header-content">
+        <div class="img-bg-header">
+            <img src="{{ asset('img/img_main_header.jpg') }}" alt="Header Image" class="img-fluid mb-4">
+        </div>
+        <div class="container">
+            <div class="header-content-text">
+                <h1>Welcome to Add An Ad</h1>
+                <p>Your one-stop solution for posting and finding ads.</p>
+        </div>
+        </div>   
+    </section>
+    
 
 {% endblock body %}
