@@ -6,6 +6,8 @@
  */
 
 // any CSS you import will output into a single css file (app.css in this case)
+import './fontsawesome/css/solid.min.css';
+import './fontsawesome/css/fontawesome.min.css';
 import './bootstrap/css/bootstrap.min.css';
 import './styles/app.css';
 import './css/main.css';
