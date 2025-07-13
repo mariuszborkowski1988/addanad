@@ -4,29 +4,32 @@
 
 {% block body %}
     {% include 'header.main.html.twig' %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
     <section class="add-main-page-categories">
         <div class="container-fluid">
             <div class="container">
-                <div class="rwo">
+                <div class="row">
                     <div class="col-12 col-sm-12 col-sm-md-6">
                         <ul class="add-cat-mp-menu">
 
-                            <li>
+                            <li class="add-cat-item-mp">
                                 <a href="#">
-                                    <img src="" alt="">
-                                    Mieszkania
+                                    <img class="img-fluid" src="{{ asset('img/flats.jpg') }}" alt="Kategoria Mieszkania">
+                                    <span class="cat-name">Mieszkania</span>
                                 </a>
                             </li>
 
-                            <li>
+                            <li class="add-cat-item-mp">
                                 <a href="#">
-                                    <img src="" alt="">
-                                    Domy
+                                    <img class="img-fluid" src="{{ asset('img/house1.jpg') }}" alt="Kategoria Domy">
+                                    <span class="cat-name">Domy</span>
+                                </a>
+                            </li>
+
+                            <li class="add-cat-item-mp">
+                                <a href="#">
+                                    <img class="img-fluid" src="{{ asset('img/room3.jpg') }}" alt="Kategoria Domy">
+                                    <span class="cat-name">Pokoje</span>
                                 </a>
                             </li>
 
@@ -34,13 +37,6 @@
                                 <a href="#">
                                     <img src="" alt="">
                                     Działki
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#">
-                                    <img src="" alt="">
-                                    Pokoje
                                 </a>
                             </li>
 
@@ -58,10 +54,10 @@
                                 </a>
                             </li>
 
-                            <li>
+                            <li class="add-cat-item-mp">
                                 <a href="#">
-                                    <img src="" alt="">
-                                    Moda
+                                    <img class="img-fluid" src="{{ asset('img/moda01.jpg') }}" alt="Kategoria Domy">
+                                    <span class="cat-name">Moda</span>
                                 </a>
                             </li>
 
