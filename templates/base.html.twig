@@ -14,6 +14,9 @@
             {% block importmap %}{{ importmap('app') }}{% endblock %}
             {{ encore_entry_script_tags('app') }}
         {% endblock %}
+        <script src="{{ asset('assets/js/jquery.js') }}"></script>
+        <script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
+        <script src="{{ asset('assets/js/main.js') }}"></script>
     </head>
     <body>
         {% block body %}{% endblock %}

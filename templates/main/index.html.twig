@@ -75,5 +75,65 @@
         </div>
     </section>
 
+    <section class="add-add container-fluid p-5 d-flex justify-content-center align-items-center shadow" style="height: 340px;background-color: #f1f1f1">
+        <h2 class="text-dark text-bold">Miejsce na Twoją reklamę</h2>
+    </section>
+
+    <section id="add-promoted-adds" class="add-promoted-adds container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <div class="section-title p-5 d-flex justify-content-center align-items-center">
+                        <h2 class="text-center text-White text-bold">Promowane Ogłoszenia:</h2>
+                    </div>
+
+                    <div class="owl-carousel">
+                        {# Card 1 #}
+                        <div class="card" style="width: 100%;">
+                            <img style="height: 260px;object-fit: cover" src="{{ asset('img/building_01.jpg') }}" class="card-img-top" alt="Building No. 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title 1</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+
+                        {# Card 2 #}
+                        <div class="card" style="width: 100%;">
+                            <img style="height: 260px;object-fit: cover" src="{{ asset('img/building_02.jpg') }}" class="card-img-top" alt="Building No. 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title 2</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+
+                        {# Card 3 #}
+                        <div class="card" style="width: 100%;">
+                            <img style="height: 260px;object-fit: cover" src="{{ asset('img/building_03.jpg') }}" class="card-img-top" alt="Building No. 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title 3</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+
+                        {# Card 4 #}
+                        <div class="card" style="width: 100%;">
+                            <img style="height: 260px;object-fit: cover" src="{{ asset('img/building_04.jpg') }}" class="card-img-top" alt="Building No. 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title 4</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
     {% include 'footer.main.html.twig' %}
 {% endblock %}
