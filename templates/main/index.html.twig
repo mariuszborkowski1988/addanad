@@ -93,9 +93,22 @@
                         <div class="card" style="width: 100%;">
                             <img style="height: 260px;object-fit: cover" src="{{ asset('img/building_01.jpg') }}" class="card-img-top" alt="Building No. 1">
                             <div class="card-body">
-                                <h5 class="card-title">Card title 1</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="info-location">
+                                        <span>MAZOWIECKIE</span>
+                                        <span class="info-separator">/</span>
+                                        <span>Warszawa</span>
+                                    </div>
+                                </div>
+                                <div class="top-card d-flex justify-content-between align-items-center">
+                                    <strong><h4 class="card-title">Mieszkanie na ul.Kasprzaka</h4></strong>
+                                    <span class="card-price">349 000 zł</span>
+                                </div>
+                                <div class="card-info-property d-flex justify-content-between align-items-center">
+                                    <span>44 m2</span>
+                                    <span>2 pokoje</span>
+                                    <span>piętro 4/6</span>
+                                </div>
                             </div>
                         </div>
 
@@ -103,9 +116,23 @@
                         <div class="card" style="width: 100%;">
                             <img style="height: 260px;object-fit: cover" src="{{ asset('img/building_02.jpg') }}" class="card-img-top" alt="Building No. 1">
                             <div class="card-body">
-                                <h5 class="card-title">Card title 2</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="info-location">
+                                        <span>MAZOWIECKIE</span>
+                                        <span class="info-separator">/</span>
+                                        <span>Warszawa</span>
+                                    </div>
+                                    <span>7932 zł/m2</span>
+                                </div>
+                                <div class="top-card d-flex justify-content-between align-items-center">
+                                    <strong><h5 class="card-title">Mieszkanie na ul.Kasprzaka</h5></strong>
+                                    <span class="card-price">349 000 zł</span>
+                                </div>
+                                <div class="card-info-property d-flex justify-content-between align-items-center">
+                                    <span>44 m2</span>
+                                    <span>2 pokoje</span>
+                                    <span>piętro 4/6</span>
+                                </div>
                             </div>
                         </div>
 
@@ -113,9 +140,23 @@
                         <div class="card" style="width: 100%;">
                             <img style="height: 260px;object-fit: cover" src="{{ asset('img/building_03.jpg') }}" class="card-img-top" alt="Building No. 1">
                             <div class="card-body">
-                                <h5 class="card-title">Card title 3</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="info-location">
+                                        <span>MAZOWIECKIE</span>
+                                        <span class="info-separator">/</span>
+                                        <span>Warszawa</span>
+                                    </div>
+                                    <span>8446 zł/m2</span>
+                                </div>
+                                <div class="top-card d-flex justify-content-between align-items-center">
+                                    <strong><h5 class="card-title">Przestronne mieszkanie na ulicy Łazienkowskiej</h5></strong>
+                                    <span class="card-price d-inline-block">549 000 zł</span>
+                                </div>
+                                <div class="card-info-property d-flex justify-content-between align-items-center">
+                                    <span>44 m2</span>
+                                    <span>4 pokoje</span>
+                                    <span>piętro 4/6</span>
+                                </div>
                             </div>
                         </div>
 
@@ -123,14 +164,151 @@
                         <div class="card" style="width: 100%;">
                             <img style="height: 260px;object-fit: cover" src="{{ asset('img/building_04.jpg') }}" class="card-img-top" alt="Building No. 1">
                             <div class="card-body">
-                                <h5 class="card-title">Card title 4</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="info-location">
+                                        <span>MAZOWIECKIE</span>
+                                        <span class="info-separator">/</span>
+                                        <span>Warszawa</span>
+                                    </div>
+                                    <span>7932 zł/m2</span>
+                                </div>
+                                <div class="top-card d-flex justify-content-between align-items-center">
+                                    <strong><h4 class="card-title">Mieszkanie na ul.Kasprzaka</h4></strong>
+                                    <span class="card-price">349 000 zł</span>
+                                </div>
+                                <div class="card-info-property d-flex justify-content-between align-items-center">
+                                    <span>44 m2</span>
+                                    <span>2 pokoje</span>
+                                    <span>piętro 4/6</span>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="add-promoted-adds" class="add-promoted-adds container-fluid bg-light mt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <div class="section-title p-5 d-flex justify-content-center align-items-center">
+                        <h2 class="text-center text-White text-bold">Najnowsze:</h2>
+                    </div>
+                </div>
+
+                {# Column 1 #}
+                <div class="col-12 col-sm-6 col-md-3">
+
+                    {# Card 1 #}
+                    <div class="card" style="width: 100%;">
+                        <img style="height: 260px;object-fit: cover" src="{{ asset('img/forest_house_01.jpg') }}" class="card-img-top" alt="Forest House No. 1">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="info-location">
+                                    <span>MAŁOPOLSKA</span>
+                                    <span class="info-separator">/</span>
+                                    <span>Zakopane</span>
+                                </div>
+                            </div>
+                            <div class="top-card d-flex justify-content-between align-items-center">
+                                <strong><h4 class="card-title">Dom na wynajem</h4></strong>
+                                <span class="card-price">7 000 zł / tydz.</span>
+                            </div>
+                            <div class="card-info-property d-flex justify-content-between align-items-center">
+                                <span>120 m2</span>
+                                <span>6 pokoji</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                {# Column 2 #}
+                <div class="col-12 col-sm-6 col-md-3">
+
+                    {# Card 2 #}
+                    <div class="card" style="width: 100%;">
+                        <img style="height: 260px;object-fit: cover" src="{{ asset('img/forest_house_02.jpg') }}" class="card-img-top" alt="Forest House No. 2">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="info-location">
+                                    <span>ŚLĄSKIE</span>
+                                    <span class="info-separator">/</span>
+                                    <span>Żywiec</span>
+                                </div>
+                            </div>
+                            <div class="top-card d-flex justify-content-between align-items-center">
+                                <strong><h4 class="card-title">Willa na wynajem</h4></strong>
+                                <span class="card-price">11 500 zł / tydz.</span>
+                            </div>
+                            <div class="card-info-property d-flex justify-content-between align-items-center">
+                                <span>180 m2</span>
+                                <span>8 pokoji</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                {# Column 3 #}
+                <div class="col-12 col-sm-6 col-md-3">
+
+                    {# Card 3 #}
+                    <div class="card" style="width: 100%;">
+                        <img style="height: 260px;object-fit: cover" src="{{ asset('img/forest_house_03.jpg') }}" class="card-img-top" alt="Forest House No. 3">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="info-location">
+                                    <span>ŚLĄSKIE</span>
+                                    <span class="info-separator">/</span>
+                                    <span>Żywiec</span>
+                                </div>
+                            </div>
+                            <div class="top-card d-flex justify-content-between align-items-center">
+                                <strong><h4 class="card-title">Willa na wynajem</h4></strong>
+                                <span class="card-price">11 500 zł / tydz.</span>
+                            </div>
+                            <div class="card-info-property d-flex justify-content-between align-items-center">
+                                <span>180 m2</span>
+                                <span>8 pokoji</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                {# Column 4 #}
+                <div class="col-12 col-sm-6 col-md-3">
+
+                    {# Card 4 #}
+                    <div class="card" style="width: 100%;">
+                        <img style="height: 260px;object-fit: cover" src="{{ asset('img/forest_house_04.jpg') }}" class="card-img-top" alt="Forest House No. 4">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="info-location">
+                                    <span>ŚLĄSKIE</span>
+                                    <span class="info-separator">/</span>
+                                    <span>Żywiec</span>
+                                </div>
+                            </div>
+                            <div class="top-card d-flex justify-content-between align-items-center">
+                                <strong><h4 class="card-title">Willa na wynajem</h4></strong>
+                                <span class="card-price">11 500 zł / tydz.</span>
+                            </div>
+                            <div class="card-info-property d-flex justify-content-between align-items-center">
+                                <span>180 m2</span>
+                                <span>8 pokoji</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
             </div>
         </div>
     </section>
