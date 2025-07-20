@@ -14,12 +14,6 @@ a {
   text-decoration: none;
 }
 
-section {
-  position: relative;
-  width: 100%;
-  margin: 60px auto;
-}
-
 /* Style Navigation */
 .add-nav-left li a {
   color: gray;
@@ -140,6 +134,10 @@ section {
 .add-cat-item-mp a:hover span {
   transform: translateY(-43%);
   transition: 0.45s;
+}
+
+.footer-main {
+  background-color: lightslategray;
 }
 
 /*# sourceMappingURL=main.css.map */

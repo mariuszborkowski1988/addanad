@@ -3,6 +3,7 @@
 {% block title %}Add An Ad - dodaj swoje ogłoszenie nieruchomości, działki, samochodu lub inne jakie chcesz sprzedać lub wynająć. {% endblock %}
 
 {% block body %}
+
     {% include 'header.main.html.twig' %}
 
     <section id="add-promoted-adds" class="add-promoted-adds container-fluid">
@@ -215,11 +216,11 @@
         </div>
     </section>
 
-    <section class="add-add container-fluid p-5 d-flex justify-content-center align-items-center shadow" style="height: 340px;background-color: #f1f1f1">
+    <section class="add-add container-fluid d-flex justify-content-center align-items-center shadow" style="height: 340px;background-color: #f1f1f1">
         <h2 class="text-dark text-bold">Miejsce na Twoją reklamę</h2>
     </section>
 
-    <section id="add-latest-adds" class="add-promoted-adds container-fluid bg-light mt-5 pb-5">
+    <section id="add-latest-adds" class="add-promoted-adds container-fluid bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -308,7 +309,7 @@
         </div>
     </section>
 
-    <section id="add-houses-adds" class="add-promoted-adds container-fluid bg-light mt-5 pb-5">
+    <section id="add-houses-adds" class="add-promoted-adds container-fluid bg-light p-5">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -432,4 +433,5 @@
     </section>
 
     {% include 'footer.main.html.twig' %}
+
 {% endblock %}
