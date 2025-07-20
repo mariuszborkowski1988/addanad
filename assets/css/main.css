@@ -136,6 +136,15 @@ a {
   transition: 0.45s;
 }
 
+/* Latest Card Style */
+.box-card {
+  display: flex;
+  align-items: stretch;
+}
+.box-card .card {
+  width: 100%;
+}
+
 .footer-main {
   background-color: lightslategray;
 }
