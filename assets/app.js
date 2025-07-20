@@ -8,6 +8,7 @@
 // any CSS you import will output into a single css file (app.css in this case)
 import './owlcarousel/owl.carousel.min.css';
 import './owlcarousel/owl.theme.default.min.css';
+import './fontsawesome/css/regular.min.css';
 import './fontsawesome/css/solid.min.css';
 import './fontsawesome/css/fontawesome.min.css';
 import './bootstrap/css/bootstrap.min.css';

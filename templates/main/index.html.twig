@@ -5,10 +5,150 @@
 {% block body %}
     {% include 'header.main.html.twig' %}
 
+    <section id="add-promoted-adds" class="add-promoted-adds container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <div class="section-title p-5 d-flex justify-content-center align-items-center">
+                        <h2 class="text-center text-White text-bold">Promowane Ogłoszenia:</h2>
+                    </div>
+
+                    <div class="owl-carousel">
+                        {# Card 1 #}
+                        <div class="card" style="width: 100%;">
+                            <img style="height: 260px;object-fit: cover" src="{{ asset('img/apartment_building_01.jpg') }}" class="card-img-top" alt="Building No. 1">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="info-location">
+                                        <span>MAZOWIECKIE</span>
+                                        <span class="info-separator">/</span>
+                                        <span>Warszawa</span>
+                                    </div>
+                                </div>
+                                <div class="top-card d-flex justify-content-between align-items-center">
+                                    <strong><h4 class="card-title">Mieszkanie na ul.Kasprzaka</h4></strong>
+                                    <span class="card-price">349 000 zł</span>
+                                </div>
+                                <div class="card-info-property d-flex justify-content-between align-items-center">
+                                    <span>44 m2</span>
+                                    <span>2 pokoje</span>
+                                    <span>piętro 4/6</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        {# Card 2 #}
+                        <div class="card" style="width: 100%;">
+                            <img style="height: 260px;object-fit: cover" src="{{ asset('img/apartment_building_02.jpg') }}" class="card-img-top" alt="Building No. 1">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="info-location">
+                                        <span>MAZOWIECKIE</span>
+                                        <span class="info-separator">/</span>
+                                        <span>Warszawa</span>
+                                    </div>
+                                    <span>7932 zł/m2</span>
+                                </div>
+                                <div class="top-card d-flex justify-content-between align-items-center">
+                                    <strong><h5 class="card-title">Mieszkanie na ul.Kasprzaka</h5></strong>
+                                    <span class="card-price">349 000 zł</span>
+                                </div>
+                                <div class="card-info-property d-flex justify-content-between align-items-center">
+                                    <span>44 m2</span>
+                                    <span>2 pokoje</span>
+                                    <span>piętro 4/6</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        {# Card 3 #}
+                        <div class="card" style="width: 100%;">
+                            <img style="height: 260px;object-fit: cover" src="{{ asset('img/apartment_building_03.jpg') }}" class="card-img-top" alt="Building No. 1">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="info-location">
+                                        <span>MAZOWIECKIE</span>
+                                        <span class="info-separator">/</span>
+                                        <span>Warszawa</span>
+                                    </div>
+                                    <span>8446 zł/m2</span>
+                                </div>
+                                <div class="top-card d-flex justify-content-between align-items-center">
+                                    <strong><h5 class="card-title">Przestronne mieszkanie na ulicy Łazienkowskiej</h5></strong>
+                                    <span class="card-price d-inline-block">549 000 zł</span>
+                                </div>
+                                <div class="card-info-property d-flex justify-content-between align-items-center">
+                                    <span>44 m2</span>
+                                    <span>4 pokoje</span>
+                                    <span>piętro 4/6</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        {# Card 4 #}
+                        <div class="card" style="width: 100%;">
+                            <img style="height: 260px;object-fit: cover" src="{{ asset('img/apartment_building_04.jpg') }}" class="card-img-top" alt="Building No. 1">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="info-location">
+                                        <span>MAZOWIECKIE</span>
+                                        <span class="info-separator">/</span>
+                                        <span>Warszawa</span>
+                                    </div>
+                                    <span>7932 zł/m2</span>
+                                </div>
+                                <div class="top-card d-flex justify-content-between align-items-center">
+                                    <strong><h4 class="card-title">Mieszkanie na ul.Kasprzaka</h4></strong>
+                                    <span class="card-price">349 000 zł</span>
+                                </div>
+                                <div class="card-info-property d-flex justify-content-between align-items-center">
+                                    <span>44 m2</span>
+                                    <span>2 pokoje</span>
+                                    <span>piętro 4/6</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        {# Card 5 #}
+                        <div class="card" style="width: 100%;">
+                            <img style="height: 260px;object-fit: cover" src="{{ asset('img/apartment_building_05.jpg') }}" class="card-img-top" alt="Building No. 1">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="info-location">
+                                        <span>MAZOWIECKIE</span>
+                                        <span class="info-separator">/</span>
+                                        <span>Warszawa</span>
+                                    </div>
+                                    <span>8932 zł/m2</span>
+                                </div>
+                                <div class="top-card d-flex justify-content-between align-items-center">
+                                    <strong><h4 class="card-title">Mieszkania Ursus</h4></strong>
+                                    <span class="card-price">449 000 zł</span>
+                                </div>
+                                <div class="card-info-property d-flex justify-content-between align-items-center">
+                                    <span>44 m2</span>
+                                    <span>2 pokoje</span>
+                                    <span>piętro 4/6</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="add-main-page-categories">
         <div class="container-fluid">
             <div class="container">
                 <div class="row">
+
+                    <div class="section-title p-5 d-flex justify-content-center align-items-center">
+                        <h2 class="text-center text-White text-bold">Kategorie:</h2>
+                    </div>
+
                     <div class="col-12 col-sm-12 col-sm-md-6">
                         <ul class="add-cat-mp-menu">
 
@@ -79,124 +219,102 @@
         <h2 class="text-dark text-bold">Miejsce na Twoją reklamę</h2>
     </section>
 
-    <section id="add-promoted-adds" class="add-promoted-adds container-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-
-                    <div class="section-title p-5 d-flex justify-content-center align-items-center">
-                        <h2 class="text-center text-White text-bold">Promowane Ogłoszenia:</h2>
-                    </div>
-
-                    <div class="owl-carousel">
-                        {# Card 1 #}
-                        <div class="card" style="width: 100%;">
-                            <img style="height: 260px;object-fit: cover" src="{{ asset('img/building_01.jpg') }}" class="card-img-top" alt="Building No. 1">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="info-location">
-                                        <span>MAZOWIECKIE</span>
-                                        <span class="info-separator">/</span>
-                                        <span>Warszawa</span>
-                                    </div>
-                                </div>
-                                <div class="top-card d-flex justify-content-between align-items-center">
-                                    <strong><h4 class="card-title">Mieszkanie na ul.Kasprzaka</h4></strong>
-                                    <span class="card-price">349 000 zł</span>
-                                </div>
-                                <div class="card-info-property d-flex justify-content-between align-items-center">
-                                    <span>44 m2</span>
-                                    <span>2 pokoje</span>
-                                    <span>piętro 4/6</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        {# Card 2 #}
-                        <div class="card" style="width: 100%;">
-                            <img style="height: 260px;object-fit: cover" src="{{ asset('img/building_02.jpg') }}" class="card-img-top" alt="Building No. 1">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="info-location">
-                                        <span>MAZOWIECKIE</span>
-                                        <span class="info-separator">/</span>
-                                        <span>Warszawa</span>
-                                    </div>
-                                    <span>7932 zł/m2</span>
-                                </div>
-                                <div class="top-card d-flex justify-content-between align-items-center">
-                                    <strong><h5 class="card-title">Mieszkanie na ul.Kasprzaka</h5></strong>
-                                    <span class="card-price">349 000 zł</span>
-                                </div>
-                                <div class="card-info-property d-flex justify-content-between align-items-center">
-                                    <span>44 m2</span>
-                                    <span>2 pokoje</span>
-                                    <span>piętro 4/6</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        {# Card 3 #}
-                        <div class="card" style="width: 100%;">
-                            <img style="height: 260px;object-fit: cover" src="{{ asset('img/building_03.jpg') }}" class="card-img-top" alt="Building No. 1">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="info-location">
-                                        <span>MAZOWIECKIE</span>
-                                        <span class="info-separator">/</span>
-                                        <span>Warszawa</span>
-                                    </div>
-                                    <span>8446 zł/m2</span>
-                                </div>
-                                <div class="top-card d-flex justify-content-between align-items-center">
-                                    <strong><h5 class="card-title">Przestronne mieszkanie na ulicy Łazienkowskiej</h5></strong>
-                                    <span class="card-price d-inline-block">549 000 zł</span>
-                                </div>
-                                <div class="card-info-property d-flex justify-content-between align-items-center">
-                                    <span>44 m2</span>
-                                    <span>4 pokoje</span>
-                                    <span>piętro 4/6</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        {# Card 4 #}
-                        <div class="card" style="width: 100%;">
-                            <img style="height: 260px;object-fit: cover" src="{{ asset('img/building_04.jpg') }}" class="card-img-top" alt="Building No. 1">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="info-location">
-                                        <span>MAZOWIECKIE</span>
-                                        <span class="info-separator">/</span>
-                                        <span>Warszawa</span>
-                                    </div>
-                                    <span>7932 zł/m2</span>
-                                </div>
-                                <div class="top-card d-flex justify-content-between align-items-center">
-                                    <strong><h4 class="card-title">Mieszkanie na ul.Kasprzaka</h4></strong>
-                                    <span class="card-price">349 000 zł</span>
-                                </div>
-                                <div class="card-info-property d-flex justify-content-between align-items-center">
-                                    <span>44 m2</span>
-                                    <span>2 pokoje</span>
-                                    <span>piętro 4/6</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="add-promoted-adds" class="add-promoted-adds container-fluid bg-light mt-5 pb-5">
+    <section id="add-latest-adds" class="add-promoted-adds container-fluid bg-light mt-5 pb-5">
         <div class="container">
             <div class="row">
                 <div class="col-12">
 
                     <div class="section-title p-5 d-flex justify-content-center align-items-center">
                         <h2 class="text-center text-White text-bold">Najnowsze:</h2>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-wrap justify-content-between align-items-center">
+
+                    {# Card 1 #}
+                    <div class="box-card w-25 p-2">
+                        <div class="card">
+                            <img style="height: 260px;object-fit: cover" src="{{ asset('img/moto_01.jpg') }}" class="card-img-top" alt="Moto No. 1">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="#"><span>Warszawa</span></a>
+                                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                </div>
+                                <div class="top-card d-flex justify-content-between align-items-center">
+                                    <strong><h4 class="card-title">Citroen i7</h4></strong>
+                                    <span class="card-price">120 000 zł </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    {# Card 2 #}
+                    <div class="box-card w-25 p-2">
+                        <div class="card">
+                        <img style="height: 260px;object-fit: cover" src="{{ asset('img/electro_01.jpg') }}" class="card-img-top" alt="Moto No. 1">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#"><span>Kolobrzeg</span></a>
+                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                            </div>
+                            <div class="top-card d-flex justify-content-between align-items-center">
+                                <strong><h4 class="card-title">iMac</h4></strong>
+                                <span class="card-price">7 999 zł </span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    {# Card 3 #}
+                    <div class="box-card w-25 p-2">
+                        <div class="card">
+                            <img style="height: 260px;object-fit: cover" src="{{ asset('img/job_img_01.jpg') }}" class="card-img-top" alt="Job">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="#"><span>Warszawa</span></a>
+                                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                </div>
+                                <div class="top-card d-flex justify-content-between align-items-center">
+                                    <strong><h4 class="card-title">Work in Service</h4></strong>
+                                    <span class="card-price">6 500 zł</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {# Card 4 #}
+                    <div class="box-card w-25 p-2">
+                        <div class="card">
+                            <img style="height: 260px;object-fit: cover" src="{{ asset('img/moto_02.jpg') }}" class="card-img-top" alt="Job">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="#"><span>Toruń</span></a>
+                                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                </div>
+                                <div class="top-card d-flex justify-content-between align-items-center">
+                                    <strong><h4 class="card-title">BMW 5</h4></strong>
+                                    <span class="card-price">99 500 zł</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="add-houses-adds" class="add-promoted-adds container-fluid bg-light mt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <div class="section-title p-5 d-flex justify-content-center align-items-center">
+                        <h2 class="text-center text-White text-bold">Domy:</h2>
                     </div>
                 </div>
 
