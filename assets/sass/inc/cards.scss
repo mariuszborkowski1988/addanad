@@ -1,3 +1,18 @@
+/* Owl Carousel promoted */
+.box-card {
+    .owl-stage-outer {
+        .owl-stage {
+            display: flex;
+            .owl-item {
+                display: flex;
+                justify-content: stretch;
+                align-content: stretch;
+            }
+        }
+    }
+}
+
+
 /* Latest Card Style */
 .box-card {
     display: flex;
@@ -7,3 +22,4 @@
         width: 100%;
     }
 }
+

@@ -136,6 +136,16 @@ a {
   transition: 0.45s;
 }
 
+/* Owl Carousel promoted */
+.box-card .owl-stage-outer .owl-stage {
+  display: flex;
+}
+.box-card .owl-stage-outer .owl-stage .owl-item {
+  display: flex;
+  justify-content: stretch;
+  align-content: stretch;
+}
+
 /* Latest Card Style */
 .box-card {
   display: flex;
