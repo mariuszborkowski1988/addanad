@@ -1616,7 +1616,7 @@ arrow-right-to-bracket:
       - insert
       - join
       - log in
-      - login
+      - security
       - sign in
       - sign up
       - sign-in
@@ -34046,7 +34046,7 @@ right-to-bracket:
       - enter
       - join
       - log in
-      - login
+      - security
       - sign in
       - sign up
       - sign-in

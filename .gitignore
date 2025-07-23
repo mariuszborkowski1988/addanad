@@ -8,6 +8,8 @@
 /var/
 /vendor/
 /.idea/
+/.env/
+/.env.dev/
 ###< symfony/framework-bundle ###
 
 ###> symfony/webpack-encore-bundle ###
