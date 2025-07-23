@@ -39,6 +39,7 @@
                         <ul class="menu-login">
                             <li><a href="{{ path('app_login') }}">Login</a></li>
                             <li><a href="{{ path('app_register') }}">Register</a></li>
+                            <li><a href="{{ path('app_logout') }}">Log out</a></li>
                         </ul>
 
                     </ul>
@@ -59,7 +60,12 @@
         </div>
         <div class="container">
             <div class="header-content-text">
-                <h1 class="mb-0">Welcome to Add An Ad</h1>
+                <h1 class="mb-0">Welcome to Add An Ad -
+                    {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                     {{ app.user.email }}
+                        {% else %}
+                        Guest
+                    {% endif %} </h1>
                 <p class="pt-0 pb-5">Your one-stop solution for posting and finding ads.</p>
                 <form class="d-flex" role="search">
 
