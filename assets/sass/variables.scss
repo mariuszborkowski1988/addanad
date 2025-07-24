@@ -7,3 +7,11 @@ $grayBorder: #f1f1f1;
 
 /* Transitions */
 $transition450: 0.45s;
+
+/* Media Queries */
+$desktopLg: " (min-width: 1200px)";
+$desktop: " (max-width: 1199px)";
+$medium: " (max-width: 991px)";
+$tablet: " (max-width: 767px)";
+$tel: " (max-width: 575px)";
+$smallTel: " (max-width: 340px)";
