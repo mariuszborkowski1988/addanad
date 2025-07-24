@@ -13,7 +13,7 @@
 
             <div class="row-login">
                 <div class="login-form-wrapper">
-                    <form method="post">
+                    <form method="post" class="d-flex justify-content-center flex-column">
                         {% if error %}
                             <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
                         {% endif %}
@@ -24,12 +24,19 @@
                             </div>
                         {% endif %}
 
-                        <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-                        <label for="username">Email</label>
-                        <input type="email" value="{{ last_username }}" name="_username" id="username" class="form-control" autocomplete="email" required autofocus>
-                        <label for="password">Password</label>
-                        <input type="password" name="_password" id="password" class="form-control" autocomplete="current-password" required>
-                        <input type="hidden" name="_csrf_token" data-controller="csrf-protection" value="{{ csrf_token('authenticate') }}">
+                        <h1 class="h3 mb-3 pb-5 pt-3 font-weight-normal d-flex justify-content-center align-items-center"><b><a
+                                    href="{{ path('app_main') }}">Add An Ad</a></b></h1>
+                        <h2 class="h3 mb-4 font-weight-normal d-flex justify-content-center align-items-center"><b>Sign in</b></h2>
+                        <div class="form-floating mb-3">
+                            <input type="email" value="{{ last_username }}" name="_username" id="username" class="form-control" autocomplete="email" required autofocus>
+                            <label for="username">Email</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="password" name="_password" id="password" class="form-control" autocomplete="current-password" required>
+                            <input type="hidden" name="_csrf_token" data-controller="csrf-protection" value="{{ csrf_token('authenticate') }}">
+                            <label for="password">Password</label>
+                        </div>
 
                             {#
                             Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
@@ -41,7 +48,7 @@
                             </div>
                             #}
 
-                        <button class="btn btn-lg btn-primary" type="submit">
+                        <button class="btn btn-lg btn-primary justify-content-center" type="submit">
                             Sign in
                         </button>
                     </form>
