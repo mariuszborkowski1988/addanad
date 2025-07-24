@@ -1,18 +1,21 @@
 /* Style Login Page */
-.login-page {
+.login-page,
+.register-page{
     position: relative;
     padding: 0;
     margin: 0;
     height: 100vh;
     width: 100%;
 
-    .container-login {
+    .container-login,
+    .container-register {
         height: 100%;
         width: 100%;
         padding: 0;
         margin: 0;
 
-        .login-bg-img {
+        .login-bg-img,
+        .register-bg-img{
             position: absolute;
             top: 30px;
             right: 30px;
@@ -30,35 +33,35 @@
             }
         }
 
-        .row-login {
+        .row-login,
+        .row-register {
             height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
             z-index: 20;
-            .login-form-wrapper {
-                z-index: 20;
-                width: 25%;
-                @media #{$desktop} {
-                    width: 45%;
-                }
-                @media #{$medium} {
-                    width: 55%;
-                }
-                @media #{$tel} {
-                    width: 80%;
-                }
-            }
         }
         /* end .row-login */
 
     }
 }
 
-.login-form-wrapper {
+.login-form-wrapper,
+.register-form-wrapper {
     background-color: $white;
     padding: 50px 30px;
     border-radius: 15px;
     border: 1px solid $grayLight;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    z-index: 20;
+    width: 25%;
+    @media #{$desktop} {
+        width: 45%;
+    }
+    @media #{$medium} {
+        width: 55%;
+    }
+    @media #{$tel} {
+        width: 80%;
+    }
 }

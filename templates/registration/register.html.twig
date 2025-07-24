@@ -3,21 +3,47 @@
 {% block title %}Register{% endblock %}
 
 {% block body %}
-    {% for flash_error in app.flashes('verify_email_error') %}
-        <div class="alert alert-danger" role="alert">{{ flash_error }}</div>
-    {% endfor %}
 
-    <h1>Register</h1>
+    <section id="register-page" class="register-page">
+        <div class="container-register">
+            <div class="register-bg-img">
+                <img src="{{ asset('img/bg/register_bg.jpg') }}" alt="Background"/>
+            </div>
 
-    {{ form_errors(registrationForm) }}
 
-    {{ form_start(registrationForm) }}
-        {{ form_row(registrationForm.email) }}
-        {{ form_row(registrationForm.plainPassword, {
-            label: 'Password'
-        }) }}
-        {{ form_row(registrationForm.agreeTerms) }}
 
-        <button type="submit" class="btn">Register</button>
-    {{ form_end(registrationForm) }}
+            <div class="row-register">
+                <div class="register-form-wrapper">
+
+
+                        <h1>Add An Ad</h1>
+                        <p>Miejsce na Twoje ogłoszenie.</p>
+
+                        {% for flash_error in app.flashes('verify_email_error') %}
+                            <div class="alert alert-danger" role="alert">{{ flash_error }}</div>
+                        {% endfor %}
+
+                        <h2>Register</h2>
+
+                        {{ form_errors(registrationForm) }}
+
+                        {{ form_start(registrationForm) }}
+                        {{ form_row(registrationForm.email) }}
+                        {{ form_row(registrationForm.plainPassword, {
+                            label: 'Password'
+                        }) }}
+                        {{ form_row(registrationForm.agreeTerms) }}
+
+                        <button type="submit" class="btn btn-outline-primary">Register</button>
+                        {{ form_end(registrationForm) }}
+
+                        <p><a href="{{ path('app_login') }}">Masz konto? <span>Zaloguj się!</span></a></p>
+
+                </div>
+            </div>
+
+        </div>{# end .container-register #}
+    </section>{# end section#register-page.register-page #}
+
+
 {% endblock %}
