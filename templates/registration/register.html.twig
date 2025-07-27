@@ -16,14 +16,17 @@
                 <div class="register-form-wrapper">
 
 
-                        <h1>Add An Ad</h1>
-                        <p>Miejsce na Twoje ogłoszenie.</p>
+                    <div class="title-website-box">
+                        <h1 class="text-center"><b><a href="{{ path('app_main') }}">Add An Ad</a></b></h1>
+                        <p class="text-center">Miejsce na Twoje ogłoszenie.</p>
+                    </div>
+
 
                         {% for flash_error in app.flashes('verify_email_error') %}
                             <div class="alert alert-danger" role="alert">{{ flash_error }}</div>
                         {% endfor %}
 
-                        <h2>Register</h2>
+                        <h2 class="text-center pt-3 pb-3">Zarejestruj się</h2>
 
                         {{ form_errors(registrationForm) }}
 
@@ -58,10 +61,10 @@
                            {# {{ form_row(registrationForm.agreeTerms) }}#}
                         </div>
 
-                        <button type="submit" class="btn btn-outline-primary">Register</button>
+                        <button type="submit" class="btn btn-lg btn-primary w-100">Register</button>
                         {{ form_end(registrationForm) }}
 
-                        <p><a href="{{ path('app_login') }}">Masz konto? <span>Zaloguj się!</span></a></p>
+                        <p class="pt-3"><a href="{{ path('app_login') }}">Masz konto? <span>Zaloguj się!</span></a></p>
 
                 </div>
             </div>
