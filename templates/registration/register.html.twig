@@ -27,12 +27,36 @@
 
                         {{ form_errors(registrationForm) }}
 
-                        {{ form_start(registrationForm) }}
-                        {{ form_row(registrationForm.email) }}
-                        {{ form_row(registrationForm.plainPassword, {
-                            label: 'Password'
-                        }) }}
-                        {{ form_row(registrationForm.agreeTerms) }}
+                        {{ form_start(registrationForm, {
+                            attr: {
+                                'class': 'register-form'
+                                }
+                            })
+                        }}
+                        <div class="form-floating mb-3">
+                            {{ form_widget(registrationForm.email, {
+                                    attr: {
+                                        'class': 'form-control'
+                                    }
+                                })
+                            }}
+                            {{ form_label(registrationForm.email, null, {
+                                'label': 'Your email'
+                            }) }}
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            {{ form_widget(registrationForm.plainPassword, {
+                                attr: {
+                                    'class': 'form-control'
+                                }
+                            })
+                            }}
+                            {{ form_label(registrationForm.plainPassword, null, {
+                                'label': 'Password'
+                            }) }}
+                           {# {{ form_row(registrationForm.agreeTerms) }}#}
+                        </div>
 
                         <button type="submit" class="btn btn-outline-primary">Register</button>
                         {{ form_end(registrationForm) }}
