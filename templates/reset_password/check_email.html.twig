@@ -3,9 +3,29 @@
 {% block title %}Password Reset Email Sent{% endblock %}
 
 {% block body %}
-    <p>
-        If an account matching your email exists, then an email was just sent that contains a link that you can use to reset your password.
-        This link will expire in {{ resetToken.expirationMessageKey|trans(resetToken.expirationMessageData, 'ResetPasswordBundle') }}.
-    </p>
-    <p>If you don't receive an email please check your spam folder or <a href="{{ path('app_forgot_password_request') }}">try again</a>.</p>
-{% endblock %}
+
+    <div id="check-email-reset-page" class="login-page">
+        <div class="container-login">
+
+        {# Background Image #}
+        <div class="login-bg-img">
+            <img src="{{ asset('img/bg/reset_02.jpg') }}" alt="Reset background image">
+        </div>
+
+            <div class="row-login">
+                <div class="login-form-wrapper w-50">
+                    <p class="text-dark text-xxl-start text-bold">
+                        <strong>
+                            If an account matching your email exists, then an email was just sent that contains a link that you can use to reset your password.
+                            This link will expire in {{ resetToken.expirationMessageKey|trans(resetToken.expirationMessageData, 'ResetPasswordBundle') }}.
+                        </strong>
+                    </p>
+                    <p><strong>If you don't receive an email please check your spam folder or <a href="{{ path('app_forgot_password_request') }}">try again</a>.</strong></p>
+                    <p><strong><a href="{{ path('app_main') }}">Return main page.....</a></strong></p>
+                </div>
+            </div>
+
+
+        </div>{# end .container-login #}
+    </div>{# end #check-email-reset-page.login-page #}
+        {% endblock %}

@@ -2,11 +2,38 @@
 
 {% block title %}Reset your password{% endblock %}
 
-{% block body %}
-    <h1>Reset your password</h1>
 
-    {{ form_start(resetForm) }}
-        {{ form_row(resetForm.plainPassword) }}
-        <button class="btn btn-primary">Reset password</button>
-    {{ form_end(resetForm) }}
+{% block body %}
+
+    <div id="reset-page" class="login-page">
+    <div class="container-login">
+
+    {# Background Image #}
+    <div class="login-bg-img">
+        <img src="{{ asset('img/bg/reset_03.jpg') }}" alt="Reset background image">
+    </div>
+
+    <div class="row-login">
+        <div class="login-form-wrapper">
+
+            {{ form_start(resetForm) }}
+                <div class="title-website-box">
+                    <h1 class="text-center"><b><a href="{{ path('app_main') }}">Add An Ad</a></b></h1>
+                    <p class="text-center">Miejsce na Twoje ogłoszenie.</p>
+                </div>
+
+                <h2 class="h3 mb-4 font-weight-normal d-flex justify-content-center align-items-center"><b>Reset your password</b></h2>
+
+                {{ form_row(resetForm.plainPassword) }}
+
+                <button class="btn btn-primary">Reset password</button>
+
+            {{ form_end(resetForm) }}
+        </div>
+    </div>
+
+    </div>{# end .container-login #}
+    </div>{# end #reset-page.login-page #}
+
+
 {% endblock %}
