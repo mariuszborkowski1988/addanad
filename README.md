@@ -3,4 +3,4 @@
 * 28.07.2025r
 * Wystylizuj Wiadomość Maila
 * Zrób Admin Dashboard po zalogowaniu dodaj my Account
-* 
+* Nie zapomnij że jeszcze został formularz zmiany hasła.

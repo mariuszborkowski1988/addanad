@@ -1,5 +1,19 @@
 /* Style Navigation */
-.add-nav-left {
+.add-nav-left,
+.add-nav-right {
+ height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.add-nav-right {
     li {
         a {
             color: gray;
@@ -22,3 +36,39 @@
     }
 }
 
+.my-account-dropdown-item {
+    position: relative;
+    ul {
+        position: absolute;
+        top: 100%;
+        transition: $transition450;
+    }
+}
+
+a.icon-link-nav {
+    font-size: 16px;
+    font-weight: 600;
+    color: $gray;
+    cursor: pointer;
+}
+
+
+.my-account-menu {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $white;
+    border: 1px solid $grayBorder;
+    border-radius: 5px;
+    li {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding-left: 10px;
+    }
+}

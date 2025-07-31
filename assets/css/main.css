@@ -114,11 +114,26 @@ a {
 
 /* Register Form */
 /* Style Navigation */
-.add-nav-left li a {
+.add-nav-left,
+.add-nav-right {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add-nav-left li,
+.add-nav-right li {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-nav-right li a {
   color: gray;
   margin: 0 10px;
 }
-.add-nav-left li a.add-btn-nav-left {
+.add-nav-right li a.add-btn-nav-left {
   background-color: #6a6a6a;
   color: #fff;
   border-radius: 10px;
@@ -126,9 +141,45 @@ a {
   font-weight: bold;
   transition: 0.45s;
 }
-.add-nav-left li a.add-btn-nav-left:hover, .add-nav-left li a.add-btn-nav-left:active, .add-nav-left li a.add-btn-nav-left:focus {
+.add-nav-right li a.add-btn-nav-left:hover, .add-nav-right li a.add-btn-nav-left:active, .add-nav-right li a.add-btn-nav-left:focus {
   background-color: #afafaf;
   transition: 0.45s;
+}
+
+.my-account-dropdown-item {
+  position: relative;
+}
+.my-account-dropdown-item ul {
+  position: absolute;
+  top: 100%;
+  transition: 0.45s;
+}
+
+a.icon-link-nav {
+  font-size: 16px;
+  font-weight: 600;
+  color: #6a6a6a;
+  cursor: pointer;
+}
+
+.my-account-menu {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #f1f1f1;
+  border-radius: 5px;
+}
+.my-account-menu li {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 10px;
 }
 
 .header-content {
