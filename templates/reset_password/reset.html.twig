@@ -24,9 +24,13 @@
 
                 <h2 class="h3 mb-4 font-weight-normal d-flex justify-content-center align-items-center"><b>Reset your password</b></h2>
 
-                {{ form_row(resetForm.plainPassword) }}
+                <div class="form-floating mb-3">
+                    {{ form_row(resetForm.plainPassword) }}
 
-                <button class="btn btn-primary">Reset password</button>
+
+                </div>
+
+                <button class="btn btn-lg btn-primary w-100">Reset password</button>
 
             {{ form_end(resetForm) }}
         </div>
